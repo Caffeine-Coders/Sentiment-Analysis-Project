@@ -4,11 +4,13 @@ all_articles = newsapi.get_everything(
     q='dhoni',
     language='en',
 )
-ct=0
-for article in all_articles['articles']:
-    ct+=1
-    print('url: ',article['url'])
-    print('Source : ',article['source']['name'])
-    print('Title : ',article['title'])
-    print('Description : ',article['description'], '\n\n')
-print(ct)
+if len(all_articles)==0:
+    print(0)
+# ct=0
+# for article in all_articles['articles']:
+#     ct+=1
+#     print('url: ',article['url'])
+#     print('Source : ',article['source']['name'])
+#     print('Title : ',article['title'])
+#     print('Description : ',article['description'], '\n\n')
+# print(ct)
