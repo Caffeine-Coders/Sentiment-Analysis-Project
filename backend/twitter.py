@@ -12,6 +12,7 @@ def get_tweets(query):
             break
         data.write(tweet.rawContent)
         data.write("\n")
+        data.write("\n")
 
 if __name__ == '__main__':
     get_tweets("MS Dhoni since:2023-03-19 until:2023-03-20")
