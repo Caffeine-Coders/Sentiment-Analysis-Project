@@ -1,11 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { AppRoutes } from './routes/AppRoutes';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import React from 'react';
+import "./App.css"
 
 function App() {
   return (
-    <div>
-      check
+   <>
+   <AppRoutes/>
+    <div className='App'>
     </div>
+  </>
   );
 }
 
