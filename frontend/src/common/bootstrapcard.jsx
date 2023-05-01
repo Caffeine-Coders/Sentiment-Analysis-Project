@@ -5,7 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 export const Bootstrapcard = ({img, name, desc}) => {
   return (
     <div>
-      <div class="card" style={{ width: '18rem' }}>
+      <div class="card" style={{ width: '18rem' , height: '20rem'}}>
       <img src={img} class="card-img-top" alt=" "/>
         <div class="card-body">
         <h5 class="card-title">{name}</h5>

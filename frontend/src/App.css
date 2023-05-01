@@ -1,3 +1,8 @@
+body
+{
+  /* background-image: linear-gradient(to right top, #7b7b85, #5e5a61, #403c40, #232122, #000000); */
+}
+
 .play-button {
   position: absolute; /* Set the button to an absolute position */
   top: 90%; /* Position the button in the center of the player */
@@ -16,4 +21,37 @@
   padding: 30px 30px; /* Set the button padding */
   font-size: 26px; /* Set the button font size */
   cursor: pointer; /* Set the cursor to a pointer on hover */
+}
+
+.card{
+  margin-right: 10px;
+  margin-bottom: 10px;
+  vertical-align: top;
+}
+.card:hover {
+  box-shadow: 0 0.65rem 0.85rem rgba(0, 0, 0, 0.5);
+}
+
+.persons
+{
+  vertical-align: top;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.card-img-top
+{
+  height: 50%;
+  object-fit: cover;
+}
+
+.card-body {
+  height: 50%;
+  overflow: hidden;
+}
+
+.inner{
+  margin-left: 14px ;
+  margin-right: 14px ;
 }

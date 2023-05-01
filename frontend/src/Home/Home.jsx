@@ -6,6 +6,8 @@ import ReactPlayer from 'react-player';
 import video from "../videos/bgvideoforsentiment.mp4"
 import { AiOutlineArrowDown } from 'react-icons/ai'
 import { Bootstrapcard } from '../common/bootstrapcard';
+import { Person } from './person';
+import { Innernav } from '../common/innernav';
 
 export const Home = () => {
   const ref = useRef(null);
@@ -36,7 +38,7 @@ export const Home = () => {
       "desc": "Former president of USA"
     },
     {
-      "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Amber_Heard_by_Gage_Skidmore.jpg",
+      "image": "https://ca-times.brightspotcdn.com/dims4/default/d13f1be/2147483647/strip/true/crop/3000x2112+0+0/resize/1200x845!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F88%2Fd4%2Ffffe6e4c44baa85f9badc8bbe38d%2Famber-heard-75062.jpg",
       "name": "Amber Herd",
       "desc": "Actress"
     },
@@ -86,6 +88,11 @@ export const Home = () => {
       "desc": "TV Host"
     },
     {
+      "image": "https://m.economictimes.com/thumb/msid-71255941,width-1200,height-900,resizemode-4,imgsize-955580/howdy-modi-triumphant-moment-for-indo-us-ties-usispf.jpg",
+      "name": "Narendra Modi",
+      "desc": "Opinion about the Indian Politician"
+    },
+    {
       "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Arvind_Kejriwal_smiling_%28cropped%29.jpg",
       "name": "Kejrival",
       "desc": "Indian Politician"
@@ -96,12 +103,7 @@ export const Home = () => {
       "desc": "Indian Politician"
     },
     {
-      "image": "https://m.economictimes.com/thumb/msid-71255941,width-1200,height-900,resizemode-4,imgsize-955580/howdy-modi-triumphant-moment-for-indo-us-ties-usispf.jpg",
-      "name": "Narendra Modi",
-      "desc": "Opinion about the Indian Politician"
-    },
-    {
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/640px-President_Barack_Obama.jpg",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-1239961811.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*",
       "name": "Barack Obama",
       "desc": "American Politician"
     },
@@ -112,6 +114,7 @@ export const Home = () => {
     },
   ]) 
 
+  const[currdiv, setcurrdiv] = useState(0) 
 
   return (
     <div className='Home'>
@@ -130,11 +133,7 @@ export const Home = () => {
         </div>
 
         <div ref = {ref}>
-            akhgkjhgkjsadf
-            asdgkjahdfgkjafhgk
-            asdgkjadfhgkjafhgk
-            asgkjahgkjfahgkj
-            asfsgkjhafjkghafkjlfghkjaf
+          <Person persons = {persons}/>
         </div>
     </div>
   )
