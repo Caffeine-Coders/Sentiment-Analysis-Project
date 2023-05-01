@@ -9,6 +9,7 @@ import { Bootstrapcard } from '../common/bootstrapcard';
 
 export const Home = () => {
   const ref = useRef(null);
+
   const handleClick = () => {
     ref.current.scrollIntoView({ behavior: 'smooth' });
   };
@@ -113,7 +114,7 @@ export const Home = () => {
 
 
   return (
-    <div>
+    <div className='Home'>
         <Nav/>
         <div className='video'>
          <ReactPlayer
@@ -121,7 +122,7 @@ export const Home = () => {
           playing={true}
           width="100%"
           height="100%"
-          volume={0.8}
+          // volume={0.8}
           muted = {true}
           loop ={true}
         />
@@ -129,7 +130,11 @@ export const Home = () => {
         </div>
 
         <div ref = {ref}>
-            
+            akhgkjhgkjsadf
+            asdgkjahdfgkjafhgk
+            asdgkjadfhgkjafhgk
+            asgkjahgkjfahgkj
+            asfsgkjhafjkghafkjlfghkjaf
         </div>
     </div>
   )

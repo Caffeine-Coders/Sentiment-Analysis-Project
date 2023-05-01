@@ -11,7 +11,7 @@ export const Player = () => {
       };
 
   return (
-    <div>
+    <div className='entry' style = {{overflowY: 'hidden'}}>
       <ReactPlayer
           url={video}
           playing={true}
