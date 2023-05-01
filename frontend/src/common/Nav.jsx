@@ -2,6 +2,7 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import imgurl from "../videos/logo_eye.png"
+
 export const Nav = () => {
 return (
 <nav class="navbar navbar-expand-lg bg-secondary-subtle">
@@ -16,7 +17,7 @@ return (
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">View Code</a>
+          <a class="nav-link" href="https://github.com/Caffeine-Coders/Sentiment-Analysis-Project/blob/main/backend/personanalysis.ipynb">View Code</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">View Process</a>
