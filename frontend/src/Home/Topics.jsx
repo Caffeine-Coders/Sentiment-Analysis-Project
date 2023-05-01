@@ -1,7 +1,14 @@
 import React from 'react'
+import { Bootstrapcard } from '../common/bootstrapcard'
 
-export const Topics = () => {
+export const Topics = ({topics}) => {
   return (
-    <div>Topics</div>
+    <div className='topics'>
+       { topics.map((item)=>
+        {
+         return  <Bootstrapcard img = {item.image} name = {item.name} desc = {item.desc}/>
+        })
+       }
+    </div>
   )
 }
