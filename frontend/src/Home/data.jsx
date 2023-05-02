@@ -45,13 +45,13 @@ useEffect(() =>
             playing={true}
             width="100%"
             height="100%"
-            volume={0.5}
+            volume={0.4}
             // muted = {true}
             loop ={true}
             />
             <button className="play-button" onClick={handleClick}>Analysis <AiOutlineArrowDown/></button>
         </div>
-        <div ref = {ref} className='result'>
+        <div className='result'>
             <h1>{selected.name} Tweet Analysis</h1>
           <div className='pro'>
             <div class="progress" role="progressbar" aria-label="Success example 40px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style={{height: "40px"}}>
@@ -60,7 +60,7 @@ useEffect(() =>
             <div class="progress" role="progressbar" aria-label="Warning example 50px high" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{height: "40px"}}>
                 <div class="progress-bar bg-warning text-dark" style={{width:neutral}}>Neutral: {neutral}</div>
             </div>
-            <div class="progress" role="progressbar" aria-label="Warning example 50px high" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{height: "40px"}}>
+            <div ref = {ref} class="progress" role="progressbar" aria-label="Warning example 50px high" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{height: "40px"}}>
                 <div class="progress-bar bg-danger" style={{width:negative}}>Negative: {negative}</div>
             </div>
           </div>
