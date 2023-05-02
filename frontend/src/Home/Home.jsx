@@ -41,7 +41,7 @@ export const Home = () => {
     },
     {
       "image": "https://ca-times.brightspotcdn.com/dims4/default/d13f1be/2147483647/strip/true/crop/3000x2112+0+0/resize/1200x845!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F88%2Fd4%2Ffffe6e4c44baa85f9badc8bbe38d%2Famber-heard-75062.jpg",
-      "name": "Amber Herd",
+      "name": "Amber Heard",
       "desc": "Actress"
     },
     {
@@ -71,7 +71,7 @@ export const Home = () => {
     },
     {
       "image": "https://media.glamour.com/photos/6259bf450e99bcd975ad0a1e/master/w_2560%2Cc_limit/1391651723",
-      "name": "Meghan Markel",
+      "name": "Meghan Markle",
       "desc": "Former Royal of UK"
     },
     {
@@ -81,7 +81,7 @@ export const Home = () => {
     },
     {
       "image": "https://s.yimg.com/ny/api/res/1.2/Tl6Wc4vo09U9wCog3BkLHQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MA--/https://media.zenfs.com/en/people_218/ceb39adca9cb11facd5b338cba8f9c25",
-      "name": "Jhonny Depp vs Amber Herd",
+      "name": "Jhonny Depp vs Amber Heard",
       "desc": "The Trail Tweets"
     },
     {
@@ -96,7 +96,7 @@ export const Home = () => {
     },
     {
       "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Arvind_Kejriwal_smiling_%28cropped%29.jpg",
-      "name": "Kejrival",
+      "name": "Kejriwal",
       "desc": "Indian Politician"
     },
     {
@@ -148,6 +148,7 @@ export const Home = () => {
       "desc": "National Aeronautics and Space Administration"
     },
   ])
+
   const[entertainment, setentertainment] = useState([
     {
       "image": "https://hindubabynames.info/downloads/wp-content/themes/hbn_download/download/sports-ipl/ipl-logo.png",
