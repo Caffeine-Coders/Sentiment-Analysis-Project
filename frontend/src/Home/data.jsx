@@ -3,6 +3,7 @@ import { Nav } from '../common/Nav'
 import "../config.json"
 import { AiOutlineArrowDown } from 'react-icons/ai'
 import ReactPlayer from 'react-player'
+import { Chart } from '../common/chart'
 
 export const Data = () => {
     const selected = JSON.parse(localStorage.getItem("data"))
@@ -28,11 +29,11 @@ useEffect(() =>
     .catch(error => console.error(error));
 
 }, [])
-    
     const positive = currdata.positive + "%";
     const negative = currdata.negative+ "%";
     const neutral = currdata.neutral+ "%";
-    console.log(positive)
+    // const grpahdata = ;
+    // console.log(grpahdata)
     
   return (
     <div>
@@ -63,7 +64,10 @@ useEffect(() =>
             <div ref = {ref} class="progress" role="progressbar" aria-label="Warning example 50px high" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style={{height: "40px"}}>
                 <div class="progress-bar bg-danger" style={{width:negative}}>Negative: {negative}</div>
             </div>
+            <br/>
           </div>
+              <h1>{selected.name} Tweet Frequency</h1>
+              <Chart jsonData={JSON.stringify(currdata["count of tweets"])}/>
         </div>
     </div>
   )

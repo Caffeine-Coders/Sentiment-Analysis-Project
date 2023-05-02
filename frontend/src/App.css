@@ -59,6 +59,8 @@
 .result
 {
   margin-top: 10px;
+  background: rgb(226,226,226);
+  background: linear-gradient(90deg, rgba(226,226,226,1) 0%, rgba(224,224,224,1) 35%);
 }
 .result>h1{
  text-align: center;

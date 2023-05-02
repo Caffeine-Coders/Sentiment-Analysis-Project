@@ -130,7 +130,7 @@ export const Home = () => {
       "image": "https://localist-images.azureedge.net/photos/36023435672136/original/361b47ffab5364f3368fe18de8e67e93768dd7bf.jpg",
       "name": "Rahul Gandhi",
       "desc": "Indian Politician",
-      "video": "https://www.youtube.com/watch?v=nEEtBVPiI44"
+      "video": "https://www.youtube.com/watch?v=1x1eQQPkTjc"
     },
   ]) 
   const[topics, settopics] = useState([
