@@ -203,70 +203,80 @@ export const Home = () => {
       "image": "https://hindubabynames.info/downloads/wp-content/themes/hbn_download/download/sports-ipl/ipl-logo.png",
       "name": "IPL 2022",
       "desc": "Worlds most popular cricket league hosted in India",
-      "video": "https://www.youtube.com/watch?v=CyWG55DX2E4"
+      "video": "https://www.youtube.com/watch?v=CyWG55DX2E4",
+      "word": "https://raw.githubusercontent.com/Caffeine-Coders/Sentiment-Analysis-Project/main/frontend/src/wordclouds/ipl2022.png"
     }
     ,
     {
       "image": "https://static.vecteezy.com/system/resources/previews/009/567/499/original/fifa-logo-fifa-world-cup-free-vector.jpg",
       "name": "FIFA",
       "desc": "It is the Worlds most popular League",
-      "video": "https://www.youtube.com/watch?v=RjRs3Y2UXTY"
+      "video": "https://www.youtube.com/watch?v=RjRs3Y2UXTY",
+      "word": "https://raw.githubusercontent.com/Caffeine-Coders/Sentiment-Analysis-Project/main/frontend/src/wordclouds/fifa%20word%20cloud.png"
     },
     {
       "image": "https://www.shutterstock.com/image-vector/illustration-batsman-playing-cricket-india-260nw-1420671143.jpg",
       "name": "IndvsPak Cricket Rivalry",
       "desc": "It is the El- Classico of Cricket",
-      "video": "https://www.youtube.com/watch?v=cXxfvdVFt58"
+      "video": "https://www.youtube.com/watch?v=cXxfvdVFt58",
+      "word": "https://raw.githubusercontent.com/Caffeine-Coders/Sentiment-Analysis-Project/main/frontend/src/wordclouds/IndvsPakwordcloud.png"
     },
     {
       "image": "https://assets.stickpng.com/images/58428defa6515b1e0ad75ab4.png",
       "name": "NBA",
       "desc": "One of the most famous Basketball League around the world",
-      "video": "https://www.youtube.com/watch?v=dxbVdyVYGcQ"
+      "video": "https://www.youtube.com/watch?v=dxbVdyVYGcQ",
+      "word": "https://raw.githubusercontent.com/Caffeine-Coders/Sentiment-Analysis-Project/main/frontend/src/wordclouds/nba.png"
     },
     {
       "image": "https://logolook.net/wp-content/uploads/2021/07/Avengers-Log%D0%BE.png",
       "name": "Avengers",
       "desc": "Avengers - it is a movie released in 2014 by Marvel",
-      "video": "https://www.youtube.com/watch?v=PhAsdlmY0o8"
+      "video": "https://www.youtube.com/watch?v=PhAsdlmY0o8",
+      "word": "https://raw.githubusercontent.com/Caffeine-Coders/Sentiment-Analysis-Project/main/frontend/src/wordclouds/avenger.png"
     },
     {
       "image": "https://cdn.theatlantic.com/thumbor/4xedENNyVDQrfV_-6NrWA2wnfJo=/0x0:1600x900/1600x900/media/img/mt/2018/07/TDK/original.jpg",
       "name": "DarkKnight",
       "desc": "Dark Knight- it is a movie released by DC",
-      "video": "https://www.youtube.com/watch?v=TsLEolNcXug"
+      "video": "https://www.youtube.com/watch?v=TsLEolNcXug",
+      "word": "https://raw.githubusercontent.com/Caffeine-Coders/Sentiment-Analysis-Project/main/frontend/src/wordclouds/darknightwordcloud.png"
     },
     {
       "image": "https://i0.wp.com/batman-news.com/wp-content/uploads/2019/08/Joker-Official-Images-Final-Poster-1600-Featured-01.jpg?fit=1600%2C900&quality=80&strip=info&ssl=1",
       "name": "Joker",
       "desc": "a Psychological movie",
-      "video": "https://www.youtube.com/watch?v=ofIa6cbeV9w" 
+      "video": "https://www.youtube.com/watch?v=ofIa6cbeV9w",
+      "word" : "https://raw.githubusercontent.com/Caffeine-Coders/Sentiment-Analysis-Project/main/frontend/src/wordclouds/joker%20word%20cloud.png"
     },
     {
       "image": "https://w0.peakpx.com/wallpaper/99/136/HD-wallpaper-movie-john-wick-chapter-3-parabellum-john-wick-keanu-reeves.jpg",
       "name": "John Wick",
       "desc": "Man of sheer will",
-      "video": "https://www.youtube.com/watch?v=zlf2l9HoImk"
+      "video": "https://www.youtube.com/watch?v=zlf2l9HoImk",
+      "word" : "https://raw.githubusercontent.com/Caffeine-Coders/Sentiment-Analysis-Project/main/frontend/src/wordclouds/jhonwickwordcloud.png"
     },
     {
       "image": "https://www.filmyfenil.com/wp-content/uploads/2019/06/Kabir-Singh-wallpaper.jpg",
       "name": "Kabir Singh",
       "desc": "It is a bollywood movie",
-      "video": "https://www.youtube.com/watch?v=RiANSSgCuJk"
+      "video": "https://www.youtube.com/watch?v=RiANSSgCuJk",
+      "word" : "https://raw.githubusercontent.com/Caffeine-Coders/Sentiment-Analysis-Project/main/frontend/src/wordclouds/kabir%20singh%20word%20cloud.png"
     },
     {
       "image": "https://images8.alphacoders.com/128/1282650.jpg",
       "name": "Morbius",
       "desc": "Movie released by Sony under MCU",
-      "video": "https://www.youtube.com/watch?v=MAXU4dMOBLk"
+      "video": "https://www.youtube.com/watch?v=MAXU4dMOBLk",
+      "word" : "https://raw.githubusercontent.com/Caffeine-Coders/Sentiment-Analysis-Project/main/frontend/src/wordclouds/morbiuswordcloud.png"
     },
     {
       "image": "https://cdn.marvel.com/content/1x/maguiregarfieldholland_opt.jpg",
       "name": "SpiderMan No Way Home",
       "desc": "Movie released by Sony under MCU",
-      "video": "https://www.youtube.com/watch?v=8CQ-SNNBvyQ"
-    },
-
+      "video": "https://www.youtube.com/watch?v=8CQ-SNNBvyQ",
+      "word" : "https://raw.githubusercontent.com/Caffeine-Coders/Sentiment-Analysis-Project/main/frontend/src/wordclouds/spidermannowaywordcloud.png"
+    },
   ])
 
   const[currdiv, setcurrdiv] = useState(0) 
