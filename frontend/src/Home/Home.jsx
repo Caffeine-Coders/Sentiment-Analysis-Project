@@ -26,7 +26,8 @@ export const Home = () => {
     {
       "image": "https://cdn.wisden.com/wp-content/uploads/2023/04/MS-Dhoni-980x530.png",
       "name": "MS Dhoni",
-      "desc": "Former ICT captain, Csk captain"
+      "desc": "Former ICT captain, Csk captain",
+      "video":"https://www.youtube.com/watch?v=b4OH3vBANa4"
     }
     ,
     {

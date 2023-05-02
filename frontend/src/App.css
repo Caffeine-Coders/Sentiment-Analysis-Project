@@ -53,5 +53,42 @@
 
 .analysisperson
 {
-  
+  /* width: 800px; */
+  height:800px ;
+}
+.result
+{
+  margin-top: 10px;
+}
+.result>h1{
+ text-align: center;
+ text-decoration: underline;
+}
+
+.analysisperson>p{
+  position: absolute; /* Set the button to an absolute position */
+  top: 59%; /* Position the button in the center of the player */
+  left: 30%;
+  padding: 10px;
+  padding-right: 10px;
+  transform: translate(-50%, -50%); /* Center the button content */
+  /* background-color: white; Set the button background color */
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 40px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 20.5px );
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur( 20.5px );
+  border: 1px solid rgba( 255, 255, 255, 0.4 );
+  color: white; /* Set the button text color */
+  border: 1px black; /* Remove the button border */
+}
+
+.pro
+{
+  padding: 10px;
+}
+
+.pro>div
+{
+  margin-top: 10px;
 }
