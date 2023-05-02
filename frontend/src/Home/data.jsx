@@ -66,8 +66,11 @@ useEffect(() =>
             </div>
             <br/>
           </div>
-              <h1>{selected.name} Tweet Frequency</h1>
+
+          <h1>{selected.name} Tweet Data Analysis</h1>
+          <div className='carousel'>
               <Chart jsonData={JSON.stringify(currdata["count of tweets"])}/>
+          </div>  
         </div>
     </div>
   )

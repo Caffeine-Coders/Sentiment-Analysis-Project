@@ -18,7 +18,7 @@ export const Chart = ({jsonData}) => {
       const chartdata = keys.map((key, i) => ({ x: key, y: parseInt(data[key])}))
 
       return (
-        <div>
+        <div className='graph'>
           <LineChart width={1600} height={600} data={chartdata}>
             <XAxis dataKey="x" />
             <YAxis />

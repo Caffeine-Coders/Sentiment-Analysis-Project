@@ -11,6 +11,7 @@ import { Innernav } from '../common/innernav';
 import { Topics } from './Topics';
 import { Entertainment } from './Entertainment';
 
+
 export const Home = () => {
   const ref = useRef(null);
 
