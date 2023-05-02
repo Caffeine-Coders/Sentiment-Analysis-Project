@@ -71,6 +71,7 @@ useEffect(() =>
           <div className='carousel'>
               <Chart jsonData={JSON.stringify(currdata["count of tweets"])}/>
           </div>  
+          <img className = "img" src= {selected.word} />
         </div>
     </div>
   )
