@@ -13,7 +13,7 @@ export const Player = () => {
   return (
     <div className='entry' style = {{overflowY: 'hidden', overflowX: 'hidden'}}>
       <ReactPlayer
-          url= {video}
+          url= ""
           playing={true}
           width="100%"
           height="100%"
