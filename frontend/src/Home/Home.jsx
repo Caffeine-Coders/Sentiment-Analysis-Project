@@ -5,11 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import ReactPlayer from 'react-player';
 import video from "../videos/bgvideoforsentiment.mp4"
 import { AiOutlineArrowDown } from 'react-icons/ai'
-import { Bootstrapcard } from '../common/bootstrapcard';
 import { Person } from './person';
-import { Innernav } from '../common/innernav';
-import { Topics } from './Topics';
-import { Entertainment } from './Entertainment';
 
 
 export const Home = () => {
@@ -19,9 +15,6 @@ export const Home = () => {
     ref.current.scrollIntoView({ behavior: 'smooth' });
   };
 
-//  "image": "",
-// "name": "",
-// "desc": ""
 
   const[persons, setpersons] = useState([
     {

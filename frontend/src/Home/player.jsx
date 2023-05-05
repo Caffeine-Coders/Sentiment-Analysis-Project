@@ -11,14 +11,15 @@ export const Player = () => {
       };
 
   return (
-    <div className='entry' style = {{overflowY: 'hidden'}}>
+    <div className='entry' style = {{overflowY: 'hidden', overflowX: 'hidden'}}>
       <ReactPlayer
-          url="https://youtu.be/mLKjKfWDq2k"
+          url= {video}
           playing={true}
-          width="100vw"
-          height="100vh"
+          width="100%"
+          height="100%"
           muted
           onEnded = {handleVideoEnd}
+          style = {{overflowY: 'hidden', overflowX: 'hidden'}}
         />   
     </div>
   )

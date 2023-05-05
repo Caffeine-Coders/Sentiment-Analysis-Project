@@ -14,13 +14,13 @@ return (
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="/home">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://github.com/Caffeine-Coders/Sentiment-Analysis-Project/blob/main/backend/personanalysis.ipynb">View Code</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">View Process</a>
+          <a class="nav-link" href="https://huggingface.co/AK776161">Want to look at the model?</a>
         </li>
       </ul>
     </div>
