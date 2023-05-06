@@ -16,6 +16,9 @@ export const Data = () => {
       divRef.current.scrollIntoView({ behavior: 'smooth' });
     };
 
+    
+
+
 useEffect(() => 
 {
     fetch('https://raw.githubusercontent.com/Caffeine-Coders/Sentiment-Analysis-Project/main/frontend/src/config.json')
