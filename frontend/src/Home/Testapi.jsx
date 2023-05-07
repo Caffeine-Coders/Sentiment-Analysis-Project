@@ -66,7 +66,7 @@ export const Testapi = () =>
           }
           else if(item[0].label === "LABEL_2")
           {
-            setmax(item[0].score *100)
+            setmax(((item[0].score)*33.33)+66.66)
             setlabel("Positive")
           }
           else if(item[0].label === "LABEL_1")
@@ -114,12 +114,14 @@ export const Testapi = () =>
                 <button class="btn btn-success" type="button" id="button-addon2" onClick={handleClick}>Get Label</button>
             </div>
             <div className='gauge'>
-              <h2>Negative</h2>
+              
               {
                 wait? 
               <BootstrapLoader/>
                :
-              (<><GaugeChart id ='gauge-chart' 
+              (<>
+                <h2>Negative</h2>
+                <GaugeChart id ='gauge-chart' 
                 percent={max/100}
                 nrOfLevels = {35}
                 colors= {["#FF0000", "#d8392b", "#00FF00"]}
@@ -133,7 +135,7 @@ export const Testapi = () =>
               </>)
               }
             </div>
-            <h3>Label: {label}</h3>
+            {wait? <></>:<h3>Label: {label}</h3>}
         </div>
     </div>
   )
