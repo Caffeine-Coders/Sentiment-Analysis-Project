@@ -1,17 +1,8 @@
 import React, {useState} from 'react'
 import { Nav } from '../common/Nav';
-
-import FusionCharts from 'fusioncharts';
-import Widgets from 'fusioncharts/fusioncharts.widgets';
-import ReactFC from 'react-fusioncharts';
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 import { BootstrapLoader } from '../common/BootstrapLoader';
 
 import GaugeChart from 'react-gauge-chart';
-
-ReactFC.fcRoot(FusionCharts, Widgets, FusionTheme);
-
-
 
 export const Testapi = () => 
 {
@@ -106,64 +97,6 @@ export const Testapi = () =>
       settext(event.target.value)
     }
     
-    const chartConfigs = {
-      type: 'angulargauge',
-      width: 600,
-      height: 400,
-      dataFormat: 'json',
-      dataSource:{
-        "chart": {
-          "caption": "SENTIMENT ANALYSIS",
-          "subcaption": "Hugging face API",
-          "lowerLimit": "0",
-          "upperLimit": "100",
-          "upperLimitDisplay": "Positive",
-          "lowerLimitDisplay": "Negative",
-          "showValue": "0",
-          "valueBelowPivot": "1",
-          "tickValueDistance": "15",
-          "theme": "fusion"
-        },
-
-        "colorRange": { // color range to 
-          "color": [{
-            "minValue": "0",
-            "maxValue": "33.333",
-            "code": "e44a00"
-          }, {
-            "minValue": "33.333",
-            "maxValue": "66.6666",
-            "code": "#f8bd19"
-          }, {
-            "minValue": "66.666",
-            "maxValue": "100",
-            "code": "##6baa01 "
-          }]
-        },
-
-        "dials": {
-          "dial": [{
-            "id": "crntYr",
-            "value": max+"",
-            "showValue": "1",
-            "tooltext": "Current utilization : $value",
-            "rearExtension": "15"
-          }]
-        },
-        "alerts": {
-          "alert": [{
-            // alert range 
-            "minvalue": "70",
-            "maxvalue": "100",
-            // call JavaScript function
-            "action": "callJS",
-            "param": "showAlert('Current server CPU Utilization is high');"
-  
-          }]
-        },
-    },
-  }
-
 
 
   console. log(max);
@@ -181,7 +114,6 @@ export const Testapi = () =>
                 <button class="btn btn-success" type="button" id="button-addon2" onClick={handleClick}>Get Label</button>
             </div>
             <div className='gauge'>
-              {/* {wait ? <BootstrapLoader/> : <ReactFC {...chartConfigs} />} */}
               <h2>Negative</h2>
               {
                 wait? 
