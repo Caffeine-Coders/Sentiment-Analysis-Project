@@ -14,10 +14,10 @@ return (
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/home">Home</a>
+          <a class="nav-link active" aria-current="page" href="/#/home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/Testapi">Want to test API</a>
+          <a class="nav-link" href="/#/Testapi">Want to test API</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://github.com/Caffeine-Coders/Sentiment-Analysis-Project/blob/main/backend/personanalysis.ipynb">View Code</a>
