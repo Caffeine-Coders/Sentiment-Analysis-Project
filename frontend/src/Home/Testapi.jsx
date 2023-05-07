@@ -7,17 +7,17 @@ import ReactFC from 'react-fusioncharts';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 import { BootstrapLoader } from '../common/BootstrapLoader';
 
+import GaugeChart from 'react-gauge-chart';
+
 ReactFC.fcRoot(FusionCharts, Widgets, FusionTheme);
+
 
 
 export const Testapi = () => 
 {
-    const [postive, setpositive] = useState(0);
-    const [neutral, setneutral] = useState(0);
-    const [negative, setnegative] = useState(0);
     const [max, setmax] = useState(0);
     const [wait, setwait] = useState(false);
-
+    const [label, setlabel] = useState("")
     const [text, settext] = useState("");
 
     var error = {
@@ -71,10 +71,12 @@ export const Testapi = () =>
           if(item[0].label === "LABEL_0")
           {
             setmax(33.333 - ((((item[0].score)*100)*33.3333)/100))
+            setlabel("Negative")
           }
           else if(item[0].label === "LABEL_2")
           {
             setmax(item[0].score *100)
+            setlabel("Positive")
           }
           else if(item[0].label === "LABEL_1")
           {
@@ -87,11 +89,13 @@ export const Testapi = () =>
                   } 
                   response.map((item) => {
                     setmax(33.333 - ((((item[0].score)*100)*33.3333)/100))
+                    setlabel("Negative")
                   })
                 })
             }
             else{
               setmax(33.33 +(item[0].score *100)*(66.66-33.33)/133.33)
+              setlabel("Neutral")
             }
           }
       });
@@ -160,6 +164,8 @@ export const Testapi = () =>
     },
   }
 
+
+
   console. log(max);
 
   return (
@@ -175,8 +181,27 @@ export const Testapi = () =>
                 <button class="btn btn-success" type="button" id="button-addon2" onClick={handleClick}>Get Label</button>
             </div>
             <div className='gauge'>
-              {wait ? <BootstrapLoader/> : <ReactFC {...chartConfigs} />}
+              {/* {wait ? <BootstrapLoader/> : <ReactFC {...chartConfigs} />} */}
+              <h2>Negative</h2>
+              {
+                wait? 
+              <BootstrapLoader/>
+               :
+              (<><GaugeChart id ='gauge-chart' 
+                percent={max/100}
+                nrOfLevels = {35}
+                colors= {["#FF0000", "#d8392b", "#00FF00"]}
+                arcWidth = {0.3}
+                needleBaseColor = "#0000000"
+                style={{width : '800px'}}
+                animate = {false}
+                hideText = {true}
+              />
+              <h2>Positive</h2>
+              </>)
+              }
             </div>
+            <h3>Label: {label}</h3>
         </div>
     </div>
   )

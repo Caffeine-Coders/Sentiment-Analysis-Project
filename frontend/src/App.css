@@ -138,6 +138,19 @@
   text-decoration: underline;
 }
 
+
+.gauge>h2
+{
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: small;
+}
+
 .heading
 {
   color: white;
@@ -164,5 +177,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  color: black;
+  margin-left: 250px;
+  margin-right: 250px;
+}
 
+
+.search_test>h3
+{
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size:medium;
+  margin-left: 250px;
+  margin-right: 250px;
 }
